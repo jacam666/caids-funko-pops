@@ -1,6 +1,6 @@
-import Link from "next/link";
+//import Link from "next/link";
 import Navbar from "@/components/Navbar";
-import { Oi } from "next/font/google";
+import React from "react";
 
 export default function Collection() {
     return (
@@ -14,11 +14,6 @@ export default function Collection() {
                     A collection of Funko Pops curated by Caidee.
                 </p>
             </div>
-            <Link href="/">
-                <button className="flex mx-auto bg-gradient-to-br from-[#0f0e0e] to-[#454645] text-white font-bold py-2 px-4 rounded-full mt-4 hover:bg-gradient-to-bl transition duration-300 ease-in-out">
-                    Take Me Home
-                </button>
-            </Link>
         </div>
     );
 }

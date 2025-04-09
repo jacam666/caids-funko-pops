@@ -1,13 +1,6 @@
 import { Oi } from "next/font/google";
 import Image from "next/image";
-import Link from "next/link";
 import Navbar from "../components/Navbar";
-
-const oi = Oi({
-  weight: '400',
-  subsets: ['latin'],
-  variable: '--font-oi',
-})
 
 export default function Home() {
   return (
@@ -29,7 +22,7 @@ export default function Home() {
             width={800}
             height={600}
             priority
-            className="w-full h-auto p-4 rounded-3xl"
+            className="w-full h-auto p-2"
           />
         </div>
         <div className="flex flex-col items-center justify-center ">
@@ -37,18 +30,13 @@ export default function Home() {
             Explore the collection and find your favorite Funko Pops!
           </p>
         </div>
-        {/* <Link href="/collection">
-          <button className="flex mx-auto bg-gradient-to-br from-[#0f0e0e] to-[#454645] text-white font-bold py-2 px-4 rounded-full mt-4 hover:bg-gradient-to-bl transition duration-300 ease-in-out">
-            View Collection
-          </button>
-        </Link> */}
         <div className="flex flex-col items-center justify-center">
           <Image
             src="/images/body-2-2.png"
             alt="Funko Pops"
             width={800}
             height={600}
-            className="w-full h-auto p-4 rounded-3xl"
+            className="w-full h-auto p-2"
           />
         </div>
       </div>
