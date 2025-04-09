@@ -30,3 +30,49 @@ body {
 funkoOrange {
   background-color: #f99400;
 }
+
+@layer utilities {
+  .animated-gradient {
+    background-size: 200% 200%;
+    background-image: linear-gradient(
+      -45deg,
+      #f7cc40,
+      #90ee6b,
+      #ff85a2,
+      #8ec5fc,
+      #f7cc40
+    );
+    animation: gradient-shift 5s ease infinite;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+  .animated-gradient-alt {
+    background-size: 200% 200%;
+    background-image: linear-gradient(
+      -45deg,
+      #ff6ec4,
+      #7873f5,
+      #42e695,
+      #ffe985,
+      #ff6ec4
+    );
+    animation: gradient-shift 5s ease infinite;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+  @keyframes gradient-shift {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+}
