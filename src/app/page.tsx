@@ -1,6 +1,7 @@
 import { Oi } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
+import Navbar from "../components/Navbar";
 
 const oi = Oi({
   weight: '400',
@@ -11,6 +12,7 @@ const oi = Oi({
 export default function Home() {
   return (
     <div className=" min-h-screen bg-gradient-to-br from-[#0f0e0e] to-[#454645]">
+      <Navbar />
       <div className="">
         <div className="  flex flex-col text-center items-center py-4 ">
           <h1 className="font-serif animated-gradient text-5xl sm:text-8xl filter drop-shadow-lg">
@@ -35,11 +37,11 @@ export default function Home() {
             Explore the collection and find your favorite Funko Pops!
           </p>
         </div>
-        <Link href="/collection">
+        {/* <Link href="/collection">
           <button className="flex mx-auto bg-gradient-to-br from-[#0f0e0e] to-[#454645] text-white font-bold py-2 px-4 rounded-full mt-4 hover:bg-gradient-to-bl transition duration-300 ease-in-out">
             View Collection
           </button>
-        </Link>
+        </Link> */}
         <div className="flex flex-col items-center justify-center">
           <Image
             src="/images/body-2-2.png"
