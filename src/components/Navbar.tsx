@@ -8,6 +8,8 @@ const navigation = [
   { name: 'My Collection', href: '/collection', current: false },
   { name: 'WishList', href: '/wishlist', current: false },
   { name: 'Funko Library', href: '/funko-library', current: false },
+  // { name: 'Marvel Pops', href: '/marvel-pops', current: false },
+
 ]
 
 function classNames(...classes: (string | boolean | undefined | null)[]): string {
