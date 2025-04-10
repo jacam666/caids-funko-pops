@@ -12,6 +12,9 @@ export default function Collection() {
                 <h1 className="font-serif animated-gradient text-5xl sm:text-8xl filter drop-shadow-lg">
                     STAR WARS Funko Pops!
                 </h1>
+                <h3 className="font-sans text-2xl font-extrabold sm:text-4l mx-4 text-white pt-4 filter drop-shadow-lg">
+                    THE FORCE IS WITH YOU CAIDEE!!
+                </h3>
                 
             </div>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 p-4">

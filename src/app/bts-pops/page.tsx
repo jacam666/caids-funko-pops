@@ -9,10 +9,16 @@ export default function Collection() {
         <div className="min-h-screen bg-black">
             <Navbar />
             <div className="flex flex-col text-center items-center py-4">
-                <h1 className="font-serif animated-gradient text-5xl sm:text-8xl filter drop-shadow-lg">
+                <h1 className="font-serif animated-gradient text-5xl sm:text-8xl mx-4 filter drop-shadow-lg">
                     BTS Funko Pops!
                 </h1>
-                
+                <h3 className="font-sans text-lg font-extrabold sm:text-4l mx-4 text-white pt-4 filter drop-shadow-lg">
+                    Don't you want me like I want you, baby?
+                    Don't you need me like I need you now?
+                    Sleep tomorrow, but tonight, go crazy
+                    All you gotta do is just meet me at the.......
+                </h3>
+
             </div>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 p-4">
                 {funkos.map((funko, index) => (

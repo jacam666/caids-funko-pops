@@ -94,7 +94,7 @@ export default function Library() {
                     </Link>
                 </div>
                 <div className="bg-white rounded-xl shadow-lg p-4 flex flex-col items-center hover:scale-105 transition-transform duration-300">
-                    <Link href="/starwars-pops" className="flex flex-col flew-grow items-center justify-center">
+                    <Link href="/starwars-pops" className="flex flex-col flex-grow items-center justify-center">
                         <Image
                             src="/images/OIP-removebg-preview.png"
                             alt="Funko Library"
@@ -105,6 +105,36 @@ export default function Library() {
                         <div className="flex-grow" />
                         <h3 className="text-lg font-semibold text-center mt-2 text-gray-800">
                             Star Wars Collection
+                        </h3>
+                    </Link>
+                </div>
+                <div className="bg-white rounded-xl shadow-lg p-4 flex flex-col items-center hover:scale-105 transition-transform duration-300">
+                    <Link href="/sonic-pops" className="flex flex-col flex-grow items-center justify-center">
+                        <Image
+                            src="/images/R.png"
+                            alt="Funko Library"
+                            width={150}
+                            height={300}
+                            className="mx-auto mt-4 mb-8"
+                        />
+                        <div className="flex-grow" />
+                        <h3 className="text-lg font-semibold text-center mt-2 text-gray-800">
+                            Sonic Collection
+                        </h3>
+                    </Link>
+                </div>
+                <div className="bg-white rounded-xl shadow-lg p-4 flex flex-col items-center hover:scale-105 transition-transform duration-300">
+                    <Link href="/strangerthings-pops" className="flex flex-col flex-grow items-center justify-center">
+                        <Image
+                            src="/images/stranger-things-logo-removebg-preview.png"
+                            alt="Funko Library"
+                            width={150}
+                            height={300}
+                            className="mx-auto mt-4 mb-8"
+                        />
+                        <div className="flex-grow" />
+                        <h3 className="text-lg font-semibold text-center mt-2 text-gray-800">
+                            Stranger Things Collection
                         </h3>
                     </Link>
                 </div>

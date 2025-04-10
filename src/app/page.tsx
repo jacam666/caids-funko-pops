@@ -18,7 +18,7 @@ export default function Home() {
         </div>
         <div className="flex flex-col items-center justify-center">
           <Image
-            src="/images/funko-cook-group-resell-preview-image.jpg"
+            src="/images/funko-pop-logo-png-6.webp"
             alt="Funko Pops"
             width={800}
             height={600}
