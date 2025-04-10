@@ -1,7 +1,7 @@
 //import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import React from "react";
-import funkos from "@/app/data/wwepop.json";
+import funkos from "@/app/data/footballpop.json";
 
 export default function Collection() {
     return (
@@ -10,10 +10,10 @@ export default function Collection() {
             <Navbar />
             <div className="flex flex-col text-center items-center py-4">
                 <h1 className="font-serif animated-gradient text-5xl sm:text-8xl filter drop-shadow-lg">
-                    WWE Funko Pops!
+                    FOOTBALL Funko Pops!
                 </h1>
                 <h3 className="font-sans text-2xl font-extrabold sm:text-4l mx-4 text-white pt-4 filter drop-shadow-lg">
-                     Can you smell what the CAIDS is cooking!!
+                     And Caidee with the ball ...... GOOOOOOAAAALLLLLL!!!!!
                 </h3>
                 
             </div>

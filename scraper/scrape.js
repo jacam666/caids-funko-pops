@@ -214,8 +214,8 @@ const fs = require('fs');
     const page = await browser.newPage();
     const funkos = [];
 
-    for (let pageNum = 1; pageNum <= 2; pageNum++) {
-        const url = `https://www.popfigures.com/search?page=${pageNum}&q=wwe&type=product`;
+    for (let pageNum = 1; pageNum <= 1; pageNum++) {
+        const url = `https://www.popfigures.com/search?page=${pageNum}&q=football&type=product`;
         // const url = `https://www.popfigures.com/collections/anime?page=${pageNum}`;
         console.log(`Navigating to: ${url}`);
         await page.goto(url, { waitUntil: 'domcontentloaded' });
@@ -236,7 +236,7 @@ const fs = require('fs');
         funkos.push(...pageFunkos);
     }
 
-    const category = 'wwe';
+    const category = 'football';
     fs.writeFileSync(`${category}pop.json`, JSON.stringify(funkos, null, 2));
     console.log(`📁 Saved ${funkos.length} ${category} Funkos to ${category}pop.json`);
 
