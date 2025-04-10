@@ -214,9 +214,9 @@ const fs = require('fs');
     const page = await browser.newPage();
     const funkos = [];
 
-    for (let pageNum = 1; pageNum <= 1; pageNum++) {
-        const url = `https://www.popfigures.com/search?page=${pageNum}&q=football&type=product`;
-        // const url = `https://www.popfigures.com/collections/anime?page=${pageNum}`;
+    for (let pageNum = 1; pageNum <= 6; pageNum++) {
+        const url = `https://www.popfigures.com/search?page=${pageNum}&q=five+nights+at+freddys&type=product`;
+        // const url = `https://www.popfigures.com/collections/other=${pageNum}`;
         console.log(`Navigating to: ${url}`);
         await page.goto(url, { waitUntil: 'domcontentloaded' });
         await autoScroll(page);
@@ -236,7 +236,7 @@ const fs = require('fs');
         funkos.push(...pageFunkos);
     }
 
-    const category = 'football';
+    const category = 'fivenights';
     fs.writeFileSync(`${category}pop.json`, JSON.stringify(funkos, null, 2));
     console.log(`📁 Saved ${funkos.length} ${category} Funkos to ${category}pop.json`);
 
