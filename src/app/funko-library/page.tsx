@@ -216,7 +216,7 @@ export default function Library() {
                 <div className="bg-white rounded-xl shadow-lg p-4 flex flex-col items-center hover:scale-105 transition-transform duration-300">
                     <Link href="/football-pops" className="flex flex-col flex-grow items-center justify-center">
                         <Image
-                            src="/images/wwe-funko-logo.png"
+                            src="/images/football-funko-logo-removebg-preview.png"
                             alt="Funko Library"
                             width={250}
                             height={300}
