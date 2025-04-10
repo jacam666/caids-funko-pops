@@ -4,11 +4,12 @@ import Navbar from "../components/Navbar";
 
 export default function Home() {
   return (
-    <div className=" min-h-screen bg-gradient-to-br from-[#0f0e0e] to-[#454645]">
+    // <div className=" min-h-screen bg-gradient-to-br from-[#0f0e0e] to-[#454645]">
+    <div className=" min-h-screen bg-black">
       <Navbar />
       <div className="">
         <div className="  flex flex-col text-center items-center py-4 ">
-          <h1 className="font-serif animated-gradient text-5xl sm:text-8xl filter drop-shadow-lg">
+          <h1 className="font-serif animated-gradient text-5xl sm:text-8xl ">
             Caidees Funko Pops!
           </h1>
           <p className="font-sans text-3xl sm:text-4l mx-4 text-white pt-4 filter drop-shadow-lg">
@@ -26,7 +27,7 @@ export default function Home() {
           />
         </div>
         <div className="flex flex-col items-center justify-center ">
-          <p className="font-serif animated-gradient-alt text-3xl text-center sm:mx-auto px-4  text-white mt-4">
+          <p className="font-serif animated-gradient-alt text-3xl text-center sm:mx-auto px-4 text-white mt-4">
             Explore the collection and find your favorite Funko Pops!
           </p>
         </div>

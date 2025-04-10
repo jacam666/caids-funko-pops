@@ -80,8 +80,8 @@ const fs = require('fs');
     const page = await browser.newPage();
     const funkos = [];
 
-    for (let pageNum = 1; pageNum <= 4; pageNum++) {
-        const url = `https://www.popfigures.com/collections/harry-potter?page=${pageNum}`;
+    for (let pageNum = 1; pageNum <= 6; pageNum++) {
+        const url = `https://www.popfigures.com/collections/star-wars?page=${pageNum}`;
         console.log(`Navigating to: ${url}`);
         await page.goto(url, { waitUntil: 'domcontentloaded' });
         await autoScroll(page);
@@ -101,7 +101,7 @@ const fs = require('fs');
         funkos.push(...pageFunkos);
     }
 
-    const category = 'harry-potter';
+    const category = 'star-wars';
     fs.writeFileSync(`${category}pop.json`, JSON.stringify(funkos, null, 2));
     console.log(`📁 Saved ${funkos.length} ${category} Funkos to ${category}pop.json`);
 

@@ -6,7 +6,8 @@ import funkos from "@/app/data/marvelpop.json";
 
 export default function Collection() {
     return (
-        <div className="min-h-screen bg-gradient-to-br from-[#0f0e0e] to-[#454645]">
+        // <div className="min-h-screen bg-gradient-to-br from-[#0f0e0e] to-[#454645]">
+        <div className="min-h-screen bg-black">
             <Navbar />
             <div className="flex flex-col text-center items-center py-4">
                 <h1 className="font-serif animated-gradient text-5xl sm:text-8xl filter drop-shadow-lg">

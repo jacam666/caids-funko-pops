@@ -1,12 +1,12 @@
 import React from "react";
 import Navbar from "@/components/Navbar";
-import funkos from "@/app/data/funkos.json";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function Collection() {
+export default function Library() {
     return (
-        <div className="min-h-screen bg-gradient-to-br from-[#0f0e0e] to-[#454645]">
+        // <div className="min-h-screen bg-gradient-to-br from-[#0f0e0e] to-[#454645]">
+        <div className="min-h-screen bg-black">
             <Navbar />
 
             <div className="flex flex-col text-center items-center py-4">
@@ -19,99 +19,93 @@ export default function Collection() {
             </div>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 p-4">
                 <div className="bg-white rounded-xl shadow-lg p-4 flex flex-col items-center hover:scale-105 transition-transform duration-300">
-                    <Link href="/marvel-pops" className="flex flex-shrink-0 items-center justify-center">
-                        <div className="flex flex-col shrink-0 items-center justify-center">
-                            <Image
-                                src="/images/marvel-funko-logo.png"
-                                alt="Funko Library"
-                                width={100}
-                                height={300}
-                                className="mx-auto mt-4 mb-8"
-                            />
-                            <h3 className="text-lg font-semibold text-center mt-2 text-gray-800">
-                                Marvel Collection
-                            </h3>
-                        </div>
+                    <Link href="/marvel-pops" className="flex flex-col flex-grow items-center justify-center">
+                        <Image
+                            src="/images/image.webp"
+                            alt="Funko Library"
+                            width={150}
+                            height={300}
+                            className="mx-auto mt-4 mb-8"
+                        />
+                        <div className="flex-grow" />
+                        <h3 className="text-lg font-semibold text-center mt-2 text-gray-800">
+                            Marvel Collection
+                        </h3>
                     </Link>
                 </div>
                 <div className="bg-white rounded-xl shadow-lg p-4 flex flex-col items-center hover:scale-105 transition-transform duration-300">
-                    <Link href="/disney-pops" className="flex flex-shrink-0 items-center justify-center">
-                        <div className="flex flex-col shrink-0 items-center justify-center">
-                            <Image
-                                src="/images/funko-pop-disney-logo.jpg"
-                                alt="Funko Library"
-                                width={100}
-                                height={300}
-                                className="mx-auto mt-4 mb-8"
-                            />
-                            <h3 className="text-lg font-semibold text-center mt-2 text-gray-800">
-                                Disney Collection
-                            </h3>
-                        </div>
+                    <Link href="/disney-pops" className="flex flex-col flex-grow items-center justify-center">
+                        <Image
+                            src="/images/funko-pop-disney-logo.jpg"
+                            alt="Funko Library"
+                            width={150}
+                            height={300}
+                            className="mx-auto mt-4 mb-8"
+                        />
+                        <div className="flex-grow" />
+                        <h3 className="text-lg font-semibold text-center mt-2 text-gray-800">
+                            Disney Collection
+                        </h3>
                     </Link>
                 </div>
                 <div className="bg-white rounded-xl shadow-lg p-4 flex flex-col items-center hover:scale-105 transition-transform duration-300">
-                    <Link href="/dc-pops" className="flex flex-shrink-0 items-center justify-center">
-                        <div className="flex flex-col shrink-0 items-center justify-center">
-                            <Image
-                                src="/images/dc-funko-logo.png"
-                                alt="Funko Library"
-                                width={100}
-                                height={300}
-                                className="mx-auto mt-4 mb-8"
-                            />
-                            <h3 className="text-lg font-semibold text-center mt-2 text-gray-800">
-                                DC Collection
-                            </h3>
-                        </div>
+                    <Link href="/dc-pops" className="flex flex-col flex-grow items-center justify-center">
+                        <Image
+                            src="/images/dc-funko-logo.png"
+                            alt="Funko Library"
+                            width={150}
+                            height={300}
+                            className="mx-auto mt-4 mb-8"
+                        />
+                        <div className="flex-grow" />
+                        <h3 className="text-lg font-semibold text-center mt-2 text-gray-800">
+                            DC Collection
+                        </h3>
                     </Link>
                 </div>
                 <div className="bg-white rounded-xl shadow-lg p-4 flex flex-col items-center hover:scale-105 transition-transform duration-300">
-                    <Link href="/potter-pops" className="flex flex-shrink-0 items-center justify-center">
-                        <div className="flex flex-col shrink-0 items-center justify-center">
-                            <Image
-                                src="/images/potter-funko-logo-removebg-preview.png"
-                                alt="Funko Library"
-                                width={100}
-                                height={300}
-                                className="mx-auto mt-4 mb-8"
-                            />
-                            <h3 className="text-lg font-semibold text-center mt-2 text-gray-800">
-                                Disney Collection
-                            </h3>
-                        </div>
+                    <Link href="/potter-pops" className="flex flex-col flex-grow items-center justify-center">
+                        <Image
+                            src="/images/potter-funko-logo-removebg-preview.png"
+                            alt="Funko Library"
+                            width={150}
+                            height={300}
+                            className="mx-auto mt-4 mb-8"
+                        />
+                        <div className="flex-grow" />
+                        <h3 className="text-lg font-semibold text-center mt-2 text-gray-800">
+                            Harry Potter Collection
+                        </h3>
                     </Link>
                 </div>
                 <div className="bg-white rounded-xl shadow-lg p-4 flex flex-col items-center hover:scale-105 transition-transform duration-300">
-                    <Link href="/disney-pops" className="flex flex-shrink-0 items-center justify-center">
-                        <div className="flex flex-col shrink-0 items-center justify-center">
-                            <Image
-                                src="/images/funko-pop-disney-logo.jpg"
-                                alt="Funko Library"
-                                width={100}
-                                height={300}
-                                className="mx-auto mt-4 mb-8"
-                            />
-                            <h3 className="text-lg font-semibold text-center mt-2 text-gray-800">
-                                Disney Collection
-                            </h3>
-                        </div>
+                    <Link href="/bts-pops" className="flex flex-col flex-grow items-center justify-center">
+                        <Image
+                            src="/images/bts-funko-logo.png"
+                            alt="Funko Library"
+                            width={150}
+                            height={300}
+                            className="mx-auto mt-4 mb-8"
+                        />
+                        <div className="flex-grow" />
+                        <h3 className="text-lg font-semibold text-center mt-2 text-gray-800">
+                            BTS Collection
+                        </h3>
                     </Link>
                 </div>
                 <div className="bg-white rounded-xl shadow-lg p-4 flex flex-col items-center hover:scale-105 transition-transform duration-300">
-                    <Link href="/disney-pops" className="flex flex-shrink-0 items-center justify-center">
-                        <div className="flex flex-col shrink-0 items-center justify-center">
-                            <Image
-                                src="/images/funko-pop-disney-logo.jpg"
-                                alt="Funko Library"
-                                width={100}
-                                height={300}
-                                className="mx-auto mt-4 mb-8"
-                            />
-                            <h3 className="text-lg font-semibold text-center mt-2 text-gray-800">
-                                Disney Collection
-                            </h3>
-                        </div>
+                    <Link href="/starwars-pops" className="flex flex-col flew-grow items-center justify-center">
+                        <Image
+                            src="/images/OIP-removebg-preview.png"
+                            alt="Funko Library"
+                            width={150}
+                            height={300}
+                            className="mx-auto mt-4 mb-8"
+                        />
+                        <div className="flex-grow" />
+                        <h3 className="text-lg font-semibold text-center mt-2 text-gray-800">
+                            Star Wars Collection
+                        </h3>
                     </Link>
                 </div>
             </div>
