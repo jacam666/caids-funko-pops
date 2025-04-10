@@ -138,6 +138,21 @@ export default function Library() {
                         </h3>
                     </Link>
                 </div>
+                <div className="bg-white rounded-xl shadow-lg p-4 flex flex-col items-center hover:scale-105 transition-transform duration-300">
+                    <Link href="/pokemon-pops" className="flex flex-col flex-grow items-center justify-center">
+                        <Image
+                            src="/images/pokemon-funko-logo.png"
+                            alt="Funko Library"
+                            width={150}
+                            height={300}
+                            className="mx-auto mt-4 mb-8"
+                        />
+                        <div className="flex-grow" />
+                        <h3 className="text-lg font-semibold text-center mt-2 text-gray-800">
+                            Pokemon Collection
+                        </h3>
+                    </Link>
+                </div>
             </div>
             {/* <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 p-4">
                 {funkos.map((funko, index) => (
