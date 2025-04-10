@@ -67,6 +67,7 @@
 //   });
 // }
 
+// 
 const puppeteer = require('puppeteer');
 const fs = require('fs');
 
@@ -79,8 +80,8 @@ const fs = require('fs');
     const page = await browser.newPage();
     const funkos = [];
 
-    for (let pageNum = 1; pageNum <= 30; pageNum++) {
-        const url = `https://www.popfigures.com/collections/all?page=${pageNum}`;
+    for (let pageNum = 1; pageNum <= 4; pageNum++) {
+        const url = `https://www.popfigures.com/collections/harry-potter?page=${pageNum}`;
         console.log(`Navigating to: ${url}`);
         await page.goto(url, { waitUntil: 'domcontentloaded' });
         await autoScroll(page);
@@ -100,50 +101,14 @@ const fs = require('fs');
         funkos.push(...pageFunkos);
     }
 
-    const categories = {
-        marvel: [],
-        dc: [],
-        starwars: [],
-        disney: [],
-        anime: [],
-        harryPotter: [],
-        gameOfThrones: [],
-        lordOfTheRings: [],
-        pokemon: [],
-        movies: [],
-        sports: [],
-        horror: [],
-        games: [],
-        wwe: [],
-        others: [],
-      };
-      
-      // Categorize
-      funkos.forEach(funko => {
-        const title = funko.title.toLowerCase();
-      
-        if (title.includes('marvel')) categories.marvel.push(funko);
-        else if (title.includes('dc')) categories.dc.push(funko);
-        else if (title.includes('star wars') || title.includes('starwars')) categories.starwars.push(funko);
-        else if (title.includes('disney')) categories.disney.push(funko);
-        else if (title.includes('anime')) categories.anime.push(funko);
-        else categories.others.push(funko);
-      });
-      
-      // Save category files
-      for (const [category, items] of Object.entries(categories)) {
-        const filename = `${category}pop.json`;
-        fs.writeFileSync(filename, JSON.stringify(items, null, 2));
-        console.log(`📁 Saved ${items.length} ${category} Funkos to ${filename}`);
-      }
-
-    fs.writeFileSync('popfigures.json', JSON.stringify(funkos, null, 2));
-    console.log(`✅ Done! Scraped ${funkos.length} total Funkos and saved to popfigures.json`);
+    const category = 'harry-potter';
+    fs.writeFileSync(`${category}pop.json`, JSON.stringify(funkos, null, 2));
+    console.log(`📁 Saved ${funkos.length} ${category} Funkos to ${category}pop.json`);
 
     await browser.close();
 })();
 
-// Scroll helper (reused from your current script)
+// Scroll helper
 async function autoScroll(page) {
     await page.evaluate(async () => {
         await new Promise(resolve => {
@@ -161,4 +126,5 @@ async function autoScroll(page) {
         });
     });
 }
+
 

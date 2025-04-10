@@ -17,19 +17,105 @@ export default function Collection() {
           Funko library.
         </p> */}
             </div>
-            <Link href="/marvel-pops" className="flex flex-shrink-0 items-center justify-center">
-                <div className="flex shrink-0 items-center justify-center">
-                    <Image
-                        src="/images/marvel-link.jpeg"
-                        alt="Funko Library"
-                        width={300}
-                        height={300}
-                        className="mx-auto mt-4 mb-8"
-                    />
-                </div>
-            </Link>
-
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 p-4">
+                <div className="bg-white rounded-xl shadow-lg p-4 flex flex-col items-center hover:scale-105 transition-transform duration-300">
+                    <Link href="/marvel-pops" className="flex flex-shrink-0 items-center justify-center">
+                        <div className="flex flex-col shrink-0 items-center justify-center">
+                            <Image
+                                src="/images/marvel-funko-logo.png"
+                                alt="Funko Library"
+                                width={300}
+                                height={300}
+                                className="mx-auto mt-4 mb-8"
+                            />
+                            <h3 className="text-lg font-semibold text-center mt-2 text-gray-800">
+                                Marvel Collection
+                            </h3>
+                        </div>
+                    </Link>
+                </div>
+                <div className="bg-white rounded-xl shadow-lg p-4 flex flex-col items-center hover:scale-105 transition-transform duration-300">
+                    <Link href="/disney-pops" className="flex flex-shrink-0 items-center justify-center">
+                        <div className="flex flex-col shrink-0 items-center justify-center">
+                            <Image
+                                src="/images/funko-pop-disney-logo.jpg"
+                                alt="Funko Library"
+                                width={300}
+                                height={300}
+                                className="mx-auto mt-4 mb-8"
+                            />
+                            <h3 className="text-lg font-semibold text-center mt-2 text-gray-800">
+                                Disney Collection
+                            </h3>
+                        </div>
+                    </Link>
+                </div>
+                <div className="bg-white rounded-xl shadow-lg p-4 flex flex-col items-center hover:scale-105 transition-transform duration-300">
+                    <Link href="/dc-pops" className="flex flex-shrink-0 items-center justify-center">
+                        <div className="flex flex-col shrink-0 items-center justify-center">
+                            <Image
+                                src="/images/dc-funko-logo.png"
+                                alt="Funko Library"
+                                width={300}
+                                height={300}
+                                className="mx-auto mt-4 mb-8"
+                            />
+                            <h3 className="text-lg font-semibold text-center mt-2 text-gray-800">
+                                DC Collection
+                            </h3>
+                        </div>
+                    </Link>
+                </div>
+                <div className="bg-white rounded-xl shadow-lg p-4 flex flex-col items-center hover:scale-105 transition-transform duration-300">
+                    <Link href="/potter-pops" className="flex flex-shrink-0 items-center justify-center">
+                        <div className="flex flex-col shrink-0 items-center justify-center">
+                            <Image
+                                src="/images/potter-funko-logo-removebg-preview.png"
+                                alt="Funko Library"
+                                width={300}
+                                height={300}
+                                className="mx-auto mt-4 mb-8"
+                            />
+                            <h3 className="text-lg font-semibold text-center mt-2 text-gray-800">
+                                Disney Collection
+                            </h3>
+                        </div>
+                    </Link>
+                </div>
+                <div className="bg-white rounded-xl shadow-lg p-4 flex flex-col items-center hover:scale-105 transition-transform duration-300">
+                    <Link href="/disney-pops" className="flex flex-shrink-0 items-center justify-center">
+                        <div className="flex flex-col shrink-0 items-center justify-center">
+                            <Image
+                                src="/images/funko-pop-disney-logo.jpg"
+                                alt="Funko Library"
+                                width={300}
+                                height={300}
+                                className="mx-auto mt-4 mb-8"
+                            />
+                            <h3 className="text-lg font-semibold text-center mt-2 text-gray-800">
+                                Disney Collection
+                            </h3>
+                        </div>
+                    </Link>
+                </div>
+                <div className="bg-white rounded-xl shadow-lg p-4 flex flex-col items-center hover:scale-105 transition-transform duration-300">
+                    <Link href="/disney-pops" className="flex flex-shrink-0 items-center justify-center">
+                        <div className="flex flex-col shrink-0 items-center justify-center">
+                            <Image
+                                src="/images/funko-pop-disney-logo.jpg"
+                                alt="Funko Library"
+                                width={300}
+                                height={300}
+                                className="mx-auto mt-4 mb-8"
+                            />
+                            <h3 className="text-lg font-semibold text-center mt-2 text-gray-800">
+                                Disney Collection
+                            </h3>
+                        </div>
+                    </Link>
+                </div>
+            </div>
+            {/* <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 p-4">
                 {funkos.map((funko, index) => (
                     <div
                         key={index}
@@ -45,7 +131,7 @@ export default function Collection() {
                         </h3>
                     </div>
                 ))}
-            </div>
+            </div> */}
         </div>
     );
 }
