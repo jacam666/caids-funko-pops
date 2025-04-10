@@ -184,7 +184,7 @@ export default function Library() {
                     </Link>
                 </div>
                 <div className="bg-white rounded-xl shadow-lg p-4 flex flex-col items-center hover:scale-105 transition-transform duration-300">
-                    <Link href="/startrek-pops" className="flex flex-col flex-grow items-center justify-center">
+                    <Link href="/doctorwho-pops" className="flex flex-col flex-grow items-center justify-center">
                         <Image
                             src="/images/doctor-who-funko-removebg-preview.png"
                             alt="Funko Library"

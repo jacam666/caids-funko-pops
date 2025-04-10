@@ -10,10 +10,10 @@ export default function Collection() {
             <Navbar />
             <div className="flex flex-col text-center items-center py-4">
                 <h1 className="font-serif animated-gradient text-5xl sm:text-8xl filter drop-shadow-lg">
-                    STAR TREK Funko Pops!
+                    DOCTOR WHO Funko Pops!
                 </h1>
                 <h3 className="font-sans text-2xl font-extrabold sm:text-4l mx-4 text-white pt-4 filter drop-shadow-lg">
-                    Beam us up CAIDEE!!
+                     CAIDEE: "OMG its so much bigger in the inside!"
                 </h3>
                 
             </div>
