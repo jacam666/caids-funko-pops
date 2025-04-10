@@ -2,6 +2,7 @@
 import Navbar from "@/components/Navbar";
 import React from "react";
 import funkos from "@/app/data/animepop.json";
+import Image from "next/image";
 
 export default function Collection() {
     return (
@@ -11,6 +12,13 @@ export default function Collection() {
             <div className="flex flex-col text-center items-center py-4">
                 <h1 className="font-serif animated-gradient text-5xl sm:text-8xl filter drop-shadow-lg">
                     ANIME Funko Pops!
+                    <Image
+                        src="/images/koreankiss-removebg-preview.png"
+                        alt="Anime Funko Pops"
+                        width={200}
+                        height={200}
+                        className="mx-auto mt-4"
+                    />
                 </h1>
                 {/* <h3 className="font-sans text-2xl font-extrabold sm:text-4l mx-4 text-white pt-4 filter drop-shadow-lg">
                     CAIDEE.... WE GOTTA CATCH THEM ALL
