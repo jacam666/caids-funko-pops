@@ -24,7 +24,7 @@ export default function Collection() {
                             <Image
                                 src="/images/marvel-funko-logo.png"
                                 alt="Funko Library"
-                                width={300}
+                                width={100}
                                 height={300}
                                 className="mx-auto mt-4 mb-8"
                             />
@@ -40,7 +40,7 @@ export default function Collection() {
                             <Image
                                 src="/images/funko-pop-disney-logo.jpg"
                                 alt="Funko Library"
-                                width={300}
+                                width={100}
                                 height={300}
                                 className="mx-auto mt-4 mb-8"
                             />
@@ -56,7 +56,7 @@ export default function Collection() {
                             <Image
                                 src="/images/dc-funko-logo.png"
                                 alt="Funko Library"
-                                width={300}
+                                width={100}
                                 height={300}
                                 className="mx-auto mt-4 mb-8"
                             />
@@ -72,7 +72,7 @@ export default function Collection() {
                             <Image
                                 src="/images/potter-funko-logo-removebg-preview.png"
                                 alt="Funko Library"
-                                width={300}
+                                width={100}
                                 height={300}
                                 className="mx-auto mt-4 mb-8"
                             />
@@ -88,7 +88,7 @@ export default function Collection() {
                             <Image
                                 src="/images/funko-pop-disney-logo.jpg"
                                 alt="Funko Library"
-                                width={300}
+                                width={100}
                                 height={300}
                                 className="mx-auto mt-4 mb-8"
                             />
@@ -104,7 +104,7 @@ export default function Collection() {
                             <Image
                                 src="/images/funko-pop-disney-logo.jpg"
                                 alt="Funko Library"
-                                width={300}
+                                width={100}
                                 height={300}
                                 className="mx-auto mt-4 mb-8"
                             />
