@@ -23,17 +23,17 @@ export default function Home() {
             width={800}
             height={600}
             priority
-            className="w-full h-auto p-2"
+            className="w-full h-auto p-2 animate-pulse"
           />
         </div>
         <div className="flex flex-col items-center justify-center ">
-          <p className="font-serif animated-gradient-alt text-3xl text-center sm:mx-auto px-4 text-white mt-4">
+          <p className="font-serif animated-gradient-alt text-3xl text-center sm:mx-auto px-4 text-white my-4">
             Explore the collection and find your favorite Funko Pops!
           </p>
         </div>
         <div className="flex flex-col items-center justify-center">
           <Image
-            src="/images/body-2-2.png"
+            src="/images/body-2-2-removebg-preview.png"
             alt="Funko Pops"
             width={800}
             height={600}
