@@ -98,7 +98,7 @@ export default function Library() {
                         <Image
                             src="/images/OIP-removebg-preview.png"
                             alt="Funko Library"
-                            width={150}
+                            width={250}
                             height={300}
                             className="mx-auto mt-4 mb-8"
                         />
@@ -150,6 +150,51 @@ export default function Library() {
                         <div className="flex-grow" />
                         <h3 className="text-lg font-semibold text-center mt-2 text-gray-800">
                             Pokemon Collection
+                        </h3>
+                    </Link>
+                </div>
+                <div className="bg-white rounded-xl shadow-lg p-4 flex flex-col items-center hover:scale-105 transition-transform duration-300">
+                    <Link href="/anime-pops" className="flex flex-col flex-grow items-center justify-center">
+                        <Image
+                            src="/images/anime-funko-logo.png"
+                            alt="Funko Library"
+                            width={250}
+                            height={300}
+                            className="mx-auto mt-4 mb-8"
+                        />
+                        <div className="flex-grow" />
+                        <h3 className="text-lg font-semibold text-center mt-2 text-gray-800">
+                            Anime Collection
+                        </h3>
+                    </Link>
+                </div>
+                <div className="bg-white rounded-xl shadow-lg p-4 flex flex-col items-center hover:scale-105 transition-transform duration-300">
+                    <Link href="/startrek-pops" className="flex flex-col flex-grow items-center justify-center">
+                        <Image
+                            src="/images/Star-trek-pops-funko-removebg-preview.png"
+                            alt="Funko Library"
+                            width={250}
+                            height={300}
+                            className="mx-auto mt-4 mb-8"
+                        />
+                        <div className="flex-grow" />
+                        <h3 className="text-lg font-semibold text-center mt-2 text-gray-800">
+                            Star Trek Collection
+                        </h3>
+                    </Link>
+                </div>
+                <div className="bg-white rounded-xl shadow-lg p-4 flex flex-col items-center hover:scale-105 transition-transform duration-300">
+                    <Link href="/startrek-pops" className="flex flex-col flex-grow items-center justify-center">
+                        <Image
+                            src="/images/doctor-who-funko-removebg-preview.png"
+                            alt="Funko Library"
+                            width={250}
+                            height={300}
+                            className="mx-auto mt-4 mb-8"
+                        />
+                        <div className="flex-grow" />
+                        <h3 className="text-lg font-semibold text-center mt-2 text-gray-800">
+                            Doctor Who Collection
                         </h3>
                     </Link>
                 </div>

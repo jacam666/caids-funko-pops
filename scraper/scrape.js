@@ -214,8 +214,9 @@ const fs = require('fs');
     const page = await browser.newPage();
     const funkos = [];
 
-    for (let pageNum = 1; pageNum <= 4; pageNum++) {
-        const url = `https://www.popfigures.com/search?page=${pageNum}&q=pokemon&type=product`;
+    for (let pageNum = 1; pageNum <= 1; pageNum++) {
+        const url = `https://www.popfigures.com/search?page=${pageNum}&q=docto+who&type=product`;
+        // const url = `https://www.popfigures.com/collections/anime?page=${pageNum}`;
         console.log(`Navigating to: ${url}`);
         await page.goto(url, { waitUntil: 'domcontentloaded' });
         await autoScroll(page);
@@ -235,7 +236,7 @@ const fs = require('fs');
         funkos.push(...pageFunkos);
     }
 
-    const category = 'pokemon';
+    const category = 'doctor-who';
     fs.writeFileSync(`${category}pop.json`, JSON.stringify(funkos, null, 2));
     console.log(`📁 Saved ${funkos.length} ${category} Funkos to ${category}pop.json`);
 
