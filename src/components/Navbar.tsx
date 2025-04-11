@@ -15,7 +15,6 @@ const navigation = [
   { name: 'My Collection', href: '/collection', current: false },
   { name: 'WishList', href: '/wishlist', current: false },
   { name: 'Funko Library', href: '/funko-library', current: false },
-  // { name: 'Marvel Pops', href: '/marvel-pops', current: false },
 ]
 
 
@@ -55,8 +54,8 @@ export default function Navbar() {
             </DisclosureButton>
           </div>
           <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-            <Link href="/" className="flex flex-shrink-0 items-center">
-              <div className="flex shrink-0 items-center">
+            {/* <div className="absolute left-1/2 transform -translate-x-1/2 z-10">
+              <Link href="/" className="flex items-center justify-center">
                 <Image
                   alt="Your Company"
                   src="/images/funko-logo (2).png"
@@ -65,8 +64,34 @@ export default function Navbar() {
                   height={100}
                   className="h-12 w-auto"
                 />
-              </div>
-            </Link>
+              </Link>
+            </div> */}
+            <div className="flex justify-center w-full sm:hidden absolute left-0 right-0">
+              <Link href="/" className="flex items-center justify-center ">
+                <Image
+                  alt="Funko Logo"
+                  src="/images/funko-logo (2).png"
+                  priority
+                  width={140}
+                  height={70}
+                  className="h-18 w-auto"
+                />
+              </Link>
+            </div>
+
+            {/* Logo - left on medium+ screens */}
+            <div className="hidden sm:flex flex-shrink-0 items-center">
+              <Link href="/" className="flex items-center">
+                <Image
+                  alt="Funko Logo"
+                  src="/images/funko-logo (2).png"
+                  priority
+                  width={200}
+                  height={100}
+                  className="h-12 w-auto"
+                />
+              </Link>
+            </div>
             <div className="hidden sm:ml-6 sm:block">
               <div className="flex space-x-4">
                 {navigation.map((item) => (
@@ -86,14 +111,6 @@ export default function Navbar() {
             </div>
           </div>
           <div className=" flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-            {/* <button
-              type="button"
-              className="relative rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 focus:outline-hidden"
-            >
-              <span className="absolute -inset-1.5" />
-              <span className="sr-only">View notifications</span>
-              <BellIcon aria-hidden="true" className="size-6" />
-            </button> */}
             <div className=' flex items-center gap-2 pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0'>
               <form onSubmit={handleSearchSubmit} className="hidden md:block">
                 <input
@@ -124,7 +141,7 @@ export default function Navbar() {
                   <img
                     alt=""
                     src="/images/Caids-profile-pic.jpg"
-                    className="size-12 rounded-full"
+                    className="size-10 rounded-full"
                   />
                 </MenuButton>
               </div>
