@@ -46,7 +46,7 @@ export default function Navbar() {
         <div className="relative flex h-16 items-center justify-between">
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
             {/* Mobile menu button*/}
-            <DisclosureButton className="group relative inline-flex items-center justify-center rounded-md p-2 text-white hover:bg-gray-700 hover:text-white focus:ring-2 focus:ring-white focus:outline-hidden focus:ring-inset">
+            <DisclosureButton className="group relative z-2 inline-flex items-center justify-center rounded-md p-2 text-white hover:bg-gray-700 hover:text-white focus:ring-2 focus:ring-white focus:outline-hidden focus:ring-inset">
               <span className="absolute -inset-0.5" />
               <span className="sr-only">Open main menu</span>
               <Bars3Icon aria-hidden="true" className="block size-6 group-data-open:hidden" />
@@ -66,7 +66,7 @@ export default function Navbar() {
                 />
               </Link>
             </div> */}
-            <div className="flex justify-center w-full sm:hidden absolute left-0 right-0">
+            <div className="flex justify-center w-full sm:hidden absolute left-0 right-0 z-0">
               <Link href="/" className="flex items-center justify-center ">
                 <Image
                   alt="Funko Logo"
@@ -110,7 +110,7 @@ export default function Navbar() {
               </div>
             </div>
           </div>
-          <div className=" flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+          <div className="relative z-10 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
             <div className=' flex items-center gap-2 pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0'>
               <form onSubmit={handleSearchSubmit} className="hidden md:block">
                 <input
