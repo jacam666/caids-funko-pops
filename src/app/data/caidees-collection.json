@@ -1,81 +1,80 @@
 [
-    {
-      "name": "Pop! Jin (Minion)",
-      "image": "/images/Pop! Jin (Minion), , hi-res.png",
-      "link": "",
-      "category": "Minions"
-    },
-    {
-      "name": "Pop! Pikachu",
-      "image": "/images/31528-2.png",
-      "link": "",
-      "category": "Pokémon"
-    },
-    {
-      "name": "Pop! Charmander",
-      "image": "/images/charmander.png",
-      "link": "",
-      "category": "Pokémon"
-    },
-    {
-      "name": "Pinocchio (Art Series) #25 Funko Pop! - Disney - Amazon Exclusive",
-      "image": "/images/pinocchio-amazon.webp",
-      "link": "",
-      "category": "DISNEY"
-    },
-    {
-      "name": "Etta Candy #228 Funko Pop! - Wonder Woman",
-      "image": "/images/etta-candy.webp",
-      "link": "",
-      "category": "DC Comics"
-    },
-    {
-      "name": "He-Man #43 Funko 10” Pop!",
-      "image": "/images/10-he-man-421254.webp",
-      "link": "",
-      "category": "Masters Of The Universe"
-    },
-    {
-      "name": "Wonder Woman on Pegasus #280 Funko Pop!",
-      "image": "/images/wonder-woman-on-pegasus-280-funko-pop-wonder-woman-preorder-520777.webp",
-      "link": "",
-      "category": "DC Comics"
-    },
-    {
-      "name": "Venomized Groot #511 (Glows in the Dark) Funko Pop! - Venom - Special Edition",
-      "image": "/images/Venomized_Groot_511_Glows_in_the_Dark_Funko_Pop_-_Venom_-_Special_Edition.webp",
-      "link": "",
-      "category": "DC Comics"
-    },
-    {
-      "name": "Funko Pop! Rides: Harry Potter - Gringotts Dragon with Harry, Ron, and Hermione, Vinyl Figure",
-      "image": "/images/Gringgotts Dragon.jpg",
-      "link": "",
-      "category": "HARRY POTTER"
-    },
-    {
-      "name": "Monkey. D. Luffy #98 Funko Pop",
-      "image": "/images/monkey-d-luffy.webp",
-      "link": "",
-      "category": "ONE PIECE"
-    },
-    {
-      "name": "Arnold Toht #1353 Funko Pop! Indiana Jones",
-      "image": "/images/arnold-toht.webp",
-      "link": "",
-      "category": "INDIANA JONES"
-    },
-    {
-      "name": "Selina Kyle #1190 Funko Pop! The Batman",
-      "image": "/images/selina-kyle.webp",
-      "link": "",
-      "category": "DC Comics"
-    },
-    {
-      "name": "YENNEFER #1193 Funko Pop! The Witcher",
-      "image": "/images/yennefer-1193.png",
-      "link": "",
-      "category": "THE WITCHER"
-    }
-  ]
-  
+  {
+    "title": "Pop! Jin (Minion)",
+    "image": "/images/Pop! Jin (Minion), , hi-res.png",
+    "link": "",
+    "category": "Minions"
+  },
+  {
+    "title": "Pop! Pikachu",
+    "image": "/images/31528-2.png",
+    "link": "",
+    "category": "Pokémon"
+  },
+  {
+    "title": "Pop! Charmander",
+    "image": "/images/charmander.png",
+    "link": "",
+    "category": "Pokémon"
+  },
+  {
+    "title": "Pinocchio (Art Series) #25 Funko Pop! - Disney - Amazon Exclusive",
+    "image": "/images/pinocchio-amazon.webp",
+    "link": "",
+    "category": "DISNEY"
+  },
+  {
+    "title": "Etta Candy #228 Funko Pop! - Wonder Woman",
+    "image": "/images/etta-candy.webp",
+    "link": "",
+    "category": "DC Comics"
+  },
+  {
+    "title": "He-Man #43 Funko 10” Pop!",
+    "image": "/images/10-he-man-421254.webp",
+    "link": "",
+    "category": "Masters Of The Universe"
+  },
+  {
+    "title": "Wonder Woman on Pegasus #280 Funko Pop!",
+    "image": "/images/wonder-woman-on-pegasus-280-funko-pop-wonder-woman-preorder-520777.webp",
+    "link": "",
+    "category": "DC Comics"
+  },
+  {
+    "title": "Venomized Groot #511 (Glows in the Dark) Funko Pop! - Venom - Special Edition",
+    "image": "/images/Venomized_Groot_511_Glows_in_the_Dark_Funko_Pop_-_Venom_-_Special_Edition.webp",
+    "link": "",
+    "category": "DC Comics"
+  },
+  {
+    "title": "Funko Pop! Rides: Harry Potter - Gringotts Dragon with Harry, Ron, and Hermione, Vinyl Figure",
+    "image": "/images/Gringgotts Dragon.jpg",
+    "link": "",
+    "category": "HARRY POTTER"
+  },
+  {
+    "title": "Monkey. D. Luffy #98 Funko Pop",
+    "image": "/images/monkey-d-luffy.webp",
+    "link": "",
+    "category": "ONE PIECE"
+  },
+  {
+    "title": "Arnold Toht #1353 Funko Pop! Indiana Jones",
+    "image": "/images/arnold-toht.webp",
+    "link": "",
+    "category": "INDIANA JONES"
+  },
+  {
+    "title": "Selina Kyle #1190 Funko Pop! The Batman",
+    "image": "/images/selina-kyle.webp",
+    "link": "",
+    "category": "DC Comics"
+  },
+  {
+    "title": "YENNEFER #1193 Funko Pop! The Witcher",
+    "image": "/images/yennefer-1193.png",
+    "link": "",
+    "category": "THE WITCHER"
+  }
+]

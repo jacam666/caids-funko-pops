@@ -5,8 +5,7 @@ import funkos from "@/app/data/caidees-collection.json";
 
 export default function Collection() {
     return (
-        // <div className="min-h-screen bg-gradient-to-br from-[#0f0e0e] to-[#454645]">
-        <div className="min-h-screen bg-black">
+            <div className="min-h-screen bg-black">
             <Navbar />
             <div className="flex flex-col text-center items-center py-4">
                 <h1 className="font-serif animated-gradient text-5xl sm:text-8xl filter drop-shadow-lg">
@@ -24,11 +23,11 @@ export default function Collection() {
                     >
                         <img
                             src={funko.image}
-                            alt={funko.name}
+                            alt={funko.title}
                             className="w-full h-auto rounded-md"
                         />
                         <h3 className="text-lg font-semibold text-center mt-2 text-gray-800">
-                            {funko.name}
+                            {funko.title}
                         </h3>
                         <div className="flex-grow"/>
                         <h2 className="flex justify-end items-end text-md font-semibold mt-4 text-gray-800">

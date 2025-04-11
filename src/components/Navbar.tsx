@@ -1,7 +1,14 @@
+"use client"
+
 import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react'
+import { MagnifyingGlassIcon } from '@heroicons/react/16/solid'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import Image from 'next/image'
 import Link from 'next/link'
+import { useRouter } from 'next/navigation'
+import { useState } from 'react'
+import SearchModal from "@/components/SearchModal";
+
 
 const navigation = [
   { name: 'Home', href: '/', current: true },
@@ -9,14 +16,30 @@ const navigation = [
   { name: 'WishList', href: '/wishlist', current: false },
   { name: 'Funko Library', href: '/funko-library', current: false },
   // { name: 'Marvel Pops', href: '/marvel-pops', current: false },
-
 ]
+
+
 
 function classNames(...classes: (string | boolean | undefined | null)[]): string {
   return classes.filter(Boolean).join(' ')
 }
 
-export default function Example() {
+export default function Navbar() {
+  const [searchQuery, setSearchQuery] = useState("");
+  const router = useRouter();
+
+  const handleSearchSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (searchQuery.trim()) {
+      router.push(`/search?query=${encodeURIComponent(searchQuery.trim())}`);
+      setSearchQuery(""); // Clear the search input after submission
+    }
+    console.log("Searching for:", searchQuery);
+  };
+
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+
   return (
     // <Disclosure as="nav" className="bg-gradient-to-br from-[#0f0e0e] to-[#474646]">
     <Disclosure as="nav" className="bg-black">
@@ -62,7 +85,7 @@ export default function Example() {
               </div>
             </div>
           </div>
-          <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+          <div className=" flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
             {/* <button
               type="button"
               className="relative rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 focus:outline-hidden"
@@ -71,6 +94,26 @@ export default function Example() {
               <span className="sr-only">View notifications</span>
               <BellIcon aria-hidden="true" className="size-6" />
             </button> */}
+            <div className=' flex items-center gap-2 pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0'>
+              <form onSubmit={handleSearchSubmit} className="hidden md:block">
+                <input
+                  type="text"
+                  placeholder="Search Funkos..."
+                  value={searchQuery}
+                  onChange={(e) => setSearchQuery(e.target.value)}
+                  className="w-64 px-3 py-2 rounded-md text-sm bg-gray-800 md:text-white placeholder-gray-400 focus:outline-none focus:ring focus:border-blue-300"
+                />
+              </form>
+              {/* Visible below md screens */}
+              <button
+                onClick={() => setIsModalOpen(true)}
+                className="md:hidden text-white hover:text-gray-300"
+                aria-label="Search"
+              >
+                <MagnifyingGlassIcon className="w-6 h-6" />
+              </button>
+              <SearchModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
+            </div>
 
             {/* Profile dropdown */}
             <Menu as="div" className="relative ml-3">
