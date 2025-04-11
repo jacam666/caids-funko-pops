@@ -1,18 +1,18 @@
 "use client";
-import { useSearchParams } from "next/navigation";
-import allFunkos from "@/app/data/allfunkos.json";
-import FunkoCard from "@/components/FunkoCard";
-import Navbar from "@/components/Navbar";
+//import { useSearchParams } from "next/navigation";
+//import allFunkos from "@/app/data/allfunkos.json";
+//import FunkoCard from "@/components/FunkoCard";
+//import Navbar from "@/components/Navbar";
 import { Suspense } from "react";
 import SearchResults from "./SearchResults";
 
 export default function SearchPage() {
-    const searchParams = useSearchParams();
-    const query = searchParams.get('query')?.toLowerCase() || '';
+    // const searchParams = useSearchParams();
+    // const query = searchParams.get('query')?.toLowerCase() || '';
 
-    const results = allFunkos.filter(funko =>
-        funko.title?.toLowerCase().includes(query)
-    );
+    // const results = allFunkos.filter(funko =>
+    //     funko.title?.toLowerCase().includes(query)
+    // );
 
     return (
         // <div className="min-h-screen bg-black">
