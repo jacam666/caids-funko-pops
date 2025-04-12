@@ -353,6 +353,11 @@ const collections = [
     href: "/fivenights-pops",
     image: "/images/fivenights-funko-logo-removebg-preview.png",
   },
+  {
+    title: "Game Of Throne's Collection",
+    href: "/gothrones-pops",
+    image: "/images/GOT-funko-logo-1.png",
+  },
 ];
 
 const container = {

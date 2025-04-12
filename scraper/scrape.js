@@ -215,7 +215,7 @@ const fs = require('fs');
     const funkos = [];
 
     for (let pageNum = 1; pageNum <= 6; pageNum++) {
-        const url = `https://www.popfigures.com/search?page=${pageNum}&q=five+nights+at+freddys&type=product`;
+        const url = `https://www.popfigures.com/search?page=${pageNum}&q=game+of+thrones&type=product`;
         // const url = `https://www.popfigures.com/collections/other=${pageNum}`;
         console.log(`Navigating to: ${url}`);
         await page.goto(url, { waitUntil: 'domcontentloaded' });
@@ -236,7 +236,7 @@ const fs = require('fs');
         funkos.push(...pageFunkos);
     }
 
-    const category = 'fivenights';
+    const category = 'gameOfThrones';
     fs.writeFileSync(`${category}pop.json`, JSON.stringify(funkos, null, 2));
     console.log(`📁 Saved ${funkos.length} ${category} Funkos to ${category}pop.json`);
 
